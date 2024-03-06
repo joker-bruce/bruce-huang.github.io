@@ -1,9 +1,8 @@
 export const bio = [
-    "Hello there, This is Vinay Somawat.",
-    `Experienced Frontend Software Engineer with a strong track record of successfully upgrading applications, optimizing performance, and delivering innovative solutions.`,
-    `Eager to apply my technical expertise and in-depth
-    product understanding to drive impactful contributions and exceed expectations in challenging projects.`,
-    "Thanks for taking the time to learn a little about me!",
+    "Yo, Sup, Welcome! This is Bruce.",
+    `I am a passionate scholar in the field of AI for Science, especially in Chemistry.`,
+    `Also, feel free to contact me if you want to know more about my research and collaboration opportunity.`,
+    "Thanks for taking the time to learn about me!",
 ];
 
 export const skills = [
