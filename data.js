@@ -212,27 +212,24 @@ export const experience = [
 
 export const education = [
     {
-        title: "B.Tech. in Computer Science and Engineering",
-        duration: "2016 - 2020",
-        subtitle: "National Institute of Technology, Warangal",
+        title: "PhD in Computer Science and Engineering",
+        duration: "2023.9-Now",
+        subtitle: "University of Notre Dame Du Lac",
         details: [],
         tags: [
-            "Data Structures & Algorithms",
-            "Operating Systems",
-            "Database Management System",
-            "Computer Networks",
-            "Compiler Designing",
-            "Cloud Computing",
+            "AI for Science",
+            "Chemistry",
+            "Computer-Aided Synthesis",
         ],
-        icon: "graduation-cap",
+        icon: "book",
     },
     {
-        title: "Class 12th in Science and Mathematics",
-        duration: "",
-        subtitle: "Board of Secondary Education, Rajasthan",
+        title: "Bachelor of Science in Computer Science and Chemistry",
+        duration: "2019.8-2023.5",
+        subtitle: "University of Wisconsin Madison",
         details: [],
-        tags: ["Physics", "Chemistry", "Mathematics"],
-        icon: "book",
+        tags: ["Chemistry", "Computer Science"],
+        icon: "graduation-cap",
     },
 ];
 
