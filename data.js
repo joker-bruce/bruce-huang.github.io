@@ -51,7 +51,7 @@ export const skills = [
 ];
 
 export const projects = {
-    webProjects: [
+    aiForChemistry: [
         {
             projectName: "Programming Diaries",
             image: "images/programmingdiaries.png",
