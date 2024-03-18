@@ -444,15 +444,15 @@ import { URLs } from './user-data/urls.js';
   
   populateBio(bio, "bio");
   
-  populateSkills(skills, "skills");
+  //populateSkills(skills, "skills");
   
-  fetchBlogsFromMedium(medium);
-  fetchGitConnectedData(gitConnected);
+  //fetchBlogsFromMedium(medium);
+  //fetchGitConnectedData(gitConnected);
   
   populateProjects(aiForChemistry, "ai-for-chemistry");
   populateProjects(chemistry, "chemistry");
   
-  populateExp_Edu(experience, "experience");
+  //populateExp_Edu(experience, "experience");
   populateExp_Edu(education, "education");
   
   populateLinks(footer, "footer");
