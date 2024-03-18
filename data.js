@@ -53,62 +53,31 @@ export const skills = [
 export const projects = {
     aiForChemistry: [
         {
-            projectName: "Programming Diaries",
-            image: "images/programmingdiaries.png",
+            projectName: "Are we making much progress? Revisiting chemical reaction yield prediction from an imbalanced regression perspective",
+            image: "images/imbalance.png",
             summary:
-                "Developed a full stack blog application to provide content on techical topics across the internet with admin interface.",
-            preview: "https://programmingdiaries.herokuapp.com/",
-            techStack: ["Django", "SQLite", "Bootstrap", "JavaScript", "Heroku"],
+                "Are we making much progress? Revisiting chemical reaction yield prediction from an imbalanced regression perspective. WWW'24 Short Paper Track",
+            preview: "https://arxiv.org/pdf/2402.05971.pdf",
+            techStack: ["Chemistry", "Machine Learning", "Yield Prediction", "Imbalanced data"],
         },
-        {
-            projectName: "Find Your Bank",
-            image: "images/findyourbank.png",
-            summary:
-                "Developed a React application to render a list of banks fetched from API. Filtered the banks based on queries from localstorage, marked favorites banks.",
-            preview: "https://clever-fermi-0d5d76.netlify.app",
-            techStack: ["Reactjs", "Bootstrap", "JavaScript", "Netlify"],
-        },
-        {
-            projectName: "Web Portfolio",
-            image: "images/portfolio.png",
-            summary:
-                "Web Portfolio to showcase acadmics, skills, projects and contact details in better manner.",
-            preview: "https://github.com/vinaysomawat/Travographer-Portal",
-            techStack: ["HTML", "Bootstrap", "JavaScript"],
-        },
-        {
-            projectName: "Resume Builder",
-            image: "images/resume-builder.png",
-            summary:
-                "Browser based editor to build and download Resumes in a customizable templates.",
-            preview: "https://vinaysomawat.github.io/Resume-Builder",
-            techStack: ["HTML", "Bootstrap", "JavaScript"],
-        },
+        
     ],
-    softwareProjects: [
+    chemistry: [
         {
-            projectName: "Pizza Ordering ChatBot",
-            image: "images/pizzaorderchatbot.png",
+            projectName: "Four new isocoumarins from Cajanus cajan",
+            image: "images/isocoumarins.png",
             summary:
-                "ChatBot using Dialogflow, Firebase database which stores the chat data in the realtime database.",
-            preview: "https://github.com/vinaysomawat/Pizza-Ordering-ChatBot",
-            techStack: ["Dailogflow", "Firebase"],
+                "Four new isocoumarins from Cajanus cajan. RSC Advances",
+            preview: "https://pubs.rsc.org/en/content/articlehtml/2024/ra/d3ra08149d",
+            techStack: ["Organic Chemistry", "Analytical Chemistry"],
         },
         {
-            projectName: "WhatsApp-Bot",
-            image: "images/whatsappbot.jpg",
+            projectName: "Three new anti-inflammatory stilbenoids and a diphenyl ether derivative from Cajanus cajan",
+            image: "images/anti-inflam.png",
             summary:
-                "Python script which helps to send messages to WhatsApp contacts automatically using selenium and web automation.",
-            preview: "https://github.com/vinaysomawat/WhatsApp-Bot",
-            techStack: ["Selenium", "Chrome Webdriver", "Python"],
-        },
-        {
-            projectName: "Bill Generator",
-            image: "images/billgenerator.png",
-            summary:
-                "GUI to transfer data to excel sheets and generate bills on the local shops.",
-            preview: "https://github.com/vinaysomawat/Bill-Generator",
-            techStack: ["Tkinter", "Openxlpy", "Python"],
+                "Three new anti-inflammatory stilbenoids and a diphenyl ether derivative from Cajanus cajan. Natural Product Research",
+            preview: "https://doi.org/10.1080/14786419.2023.2297862",
+            techStack: ["Cajanus Cajan", "Stilbenoids", "Biosynthesis"],
         },
     ],
     androidProjects: [
@@ -235,23 +204,6 @@ export const education = [
 
 export const footer = [
     {
-        label: "Dev Profiles",
-        data: [
-            {
-                text: "Stackoverflow",
-                link: "https://stackoverflow.com/users/8461233/vinay-somawat",
-            },
-            {
-                text: "GitHub",
-                link: "https://github.com/vinaysomawat",
-            },
-            {
-                text: "LeetCode",
-                link: "https://leetcode.com/somawatvinay/",
-            },
-        ],
-    },
-    {
         label: "Resources",
         data: [
             {
@@ -273,23 +225,22 @@ export const footer = [
         data: [
             {
                 text: "Linkedin",
-                link: "https://www.linkedin.com/in/vinaysomawat/",
+                link: "https://www.linkedin.com/in/xiaobao-bruce-huang-15878823b/",
             },
             {
                 text: "Twitter",
-                link: "https://twitter.com/thesigmakid",
+                link: "https://twitter.com/BruceHU90978862",
             },
             {
-                text: "Buy me a coffee",
-                link: "https://www.buymeacoffee.com/r194dME8y",
+                text: "Google Scholar",
+                link: "https://scholar.google.com/citations?user=t_qARfwAAAAJ&hl=en",
             },
         ],
     },
     {
         label: "copyright-text",
         data: [
-            "Made with &hearts; by Vinay Somawat.",
-            "&copy; No Copyrights. Feel free to use this template.",
+            "Made with &hearts; by Bruce Huang.",
         ],
     },
 ];

@@ -28,7 +28,7 @@
 body {
 	font-family: "Quicksand", Arial, sans-serif;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 13px;
 	line-height: 1.8;
 	color: black;
 }
@@ -57,7 +57,7 @@ a:focus {
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.3em;
 	font-family: "Montserrat", sans-serif;
 }
 x {
