@@ -447,7 +447,7 @@ import { URLs } from './user-data/urls.js';
   
   populateProjects(aiForChemistry, "ai-for-chemistry");
   populateProjects(chemistry, "chemistry");
-  populateProjects(chemistry, "others");
+  populateProjects(others, "others");
 
 
   populateExp_Edu(education, "education");
