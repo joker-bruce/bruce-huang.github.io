@@ -9,7 +9,7 @@ import {
 
 import { URLs } from './user-data/urls.js';
   
-  const { aiForChemistry, chemistry, androidProjects, freelanceProjects } =
+  const { aiForChemistry, chemistry, others, androidProjects, freelanceProjects } =
     projects;
   const { medium, gitConnected } = URLs;
   
@@ -447,7 +447,8 @@ import { URLs } from './user-data/urls.js';
   
   populateProjects(aiForChemistry, "ai-for-chemistry");
   populateProjects(chemistry, "chemistry");
-  
+  populateProjects(chemistry, "others");
+
 
   populateExp_Edu(education, "education");
   

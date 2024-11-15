@@ -53,16 +53,40 @@ export const skills = [
 export const projects = {
     aiForChemistry: [
         {
+            projectName: "Application of Large Language Models in Chemistry Reaction Data Extraction and Cleaning",
+            image: "images/llm_chem.png",
+            summary:
+                "Application of Large Language Models in Chemistry Reaction Data Extraction and Cleaning, CIKM 2024",
+            preview: "https://dl.acm.org/doi/pdf/10.1145/3627673.3679874",
+            techStack: ["Chemistry", "Machine Learning", "LLM", "Information Retrieval"],
+        },
+        {
+            projectName: "MolX: Enhancing Large Language Models for Molecular Learning with A Multi-Modal Extension",
+            image: "images/molx.png",
+            summary:
+                "MolX: Enhancing Large Language Models for Molecular Learning with A Multi-Modal Extension",
+            preview: "https://arxiv.org/pdf/2402.05971.pdf",
+            techStack: ["Chemistry", "Machine Learning", "LLM", "Representation Learning", "Multimodal"],
+        },
+        {
             projectName: "Are we making much progress? Revisiting chemical reaction yield prediction from an imbalanced regression perspective",
             image: "images/imbalance.png",
             summary:
-                "Are we making much progress? Revisiting chemical reaction yield prediction from an imbalanced regression perspective. WWW'24 Short Paper Track",
+                "Are we making much progress? Revisiting chemical reaction yield prediction from an imbalanced regression perspective. WWW 2024",
             preview: "https://arxiv.org/pdf/2402.05971.pdf",
             techStack: ["Chemistry", "Machine Learning", "Yield Prediction", "Imbalanced data"],
         },
         
     ],
     chemistry: [
+        {
+            projectName: "New stilbenes from Cajanus cajan inhibit adipogenesis in 3T3-L1 adipocytes through down-regulation of PPARγ",
+            image: "images/ppar.png",
+            summary:
+                "New stilbenes from Cajanus cajan inhibit adipogenesis in 3T3-L1 adipocytes through down-regulation of PPARγ. Bioorganic Chemistry",
+            preview: "https://www.sciencedirect.com/science/article/pii/S0045206824007569",
+            techStack: ["Stilbenes", "Cajanus cajan", "PPARγ", "Anti-adipogenesis", "Adipocyte differentiation"],
+        },
         {
             projectName: "Four new isocoumarins from Cajanus cajan",
             image: "images/isocoumarins.png",
@@ -78,6 +102,16 @@ export const projects = {
                 "Three new anti-inflammatory stilbenoids and a diphenyl ether derivative from Cajanus cajan. Natural Product Research",
             preview: "https://doi.org/10.1080/14786419.2023.2297862",
             techStack: ["Cajanus Cajan", "Stilbenoids", "Biosynthesis"],
+        },
+    ],
+    others: [
+        {
+            projectName: "ChefFusion: Multimodal Foundation Model Integrating Recipe and Food Image Generation",
+            image: "images/chefFusion.png",
+            summary:
+                "ChefFusion: Multimodal Foundation Model Integrating Recipe and Food Image Generation, CIKM 2024",
+            preview: "https://arxiv.org/pdf/2409.12010",
+            techStack: ["Food Computing", "Multimodal", "LLM", "Recipe Generation", "Food Image Generation"],
         },
     ],
     androidProjects: [
