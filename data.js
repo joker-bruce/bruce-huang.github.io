@@ -65,7 +65,7 @@ export const projects = {
             image: "images/molx.png",
             summary:
                 "MolX: Enhancing Large Language Models for Molecular Learning with A Multi-Modal Extension",
-            preview: "https://arxiv.org/pdf/2402.05971.pdf",
+            preview: "https://arxiv.org/abs/2406.06777",
             techStack: ["Chemistry", "Machine Learning", "LLM", "Representation Learning", "Multimodal"],
         },
         {
