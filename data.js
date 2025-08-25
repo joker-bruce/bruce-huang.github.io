@@ -53,6 +53,14 @@ export const skills = [
 export const projects = {
     aiForChemistry: [
         {
+            projectName: "ChemHGNN: A Hierarchical Hypergraph Neural Network for Reaction Virtual Screening and Discovery",
+            image: "images/ChemHGNN.png",
+            summary:
+                "ChemHGNN: A Hierarchical Hypergraph Neural Network for Reaction Virtual Screening and Discovery",
+            preview: "https://arxiv.org/pdf/2506.11041",
+            techStack: ["Chemistry", "Machine Learning", "Hypergraph Neural Network", "Reaction Virtual Screening", "Reaction Discovery"],
+        },
+        {
             projectName: "Application of Large Language Models in Chemistry Reaction Data Extraction and Cleaning",
             image: "images/llm_chem.png",
             summary:
