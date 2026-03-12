@@ -1,0 +1,504 @@
+/* Fishing Theme Styles */
+
+/* Global override for all yellow backgrounds */
+#colorlib-aside {
+	background-color: #e3f2fd !important;
+}
+
+.timeline-label {
+	background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%) !important;
+}
+
+.accordion {
+	background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%) !important;
+}
+
+.submenu {
+	background: rgba(227, 242, 253, 0.5) !important;
+}
+
+.timeline-icon.color-3 {
+	background: #4fc3f7 !important;
+}
+
+.timeline-label:hover {
+	background: linear-gradient(135deg, #bbdefb 0%, #90caf9 100%) !important;
+}
+
+.resume-item:hover {
+	background: transparent !important;
+}
+
+.project-card:hover {
+	background: transparent !important;
+}
+
+/* Override footer yellow background */
+footer {
+	background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%) !important;
+}
+
+:root {
+	--footer-bg: #e3f2fd !important;
+}
+
+/* Override fish item backgrounds to prevent yellow on hover */
+.fish-item li {
+	background: transparent !important;
+}
+
+.fish-item li:hover {
+	background: transparent !important;
+}
+
+.submenu li {
+	background: transparent !important;
+}
+
+.submenu li:hover {
+	background: transparent !important;
+}
+
+/* Fishing rod extending from avatar */
+.author-img {
+	position: relative;
+	z-index: 10;
+}
+
+.author-img img {
+	transform: scaleX(-1);
+}
+
+.author-img::before {
+	content: "";
+	position: absolute;
+	bottom: 15%;
+	right: 15%;
+	width: 250px;
+	height: 250px;
+	background: url("../images/fishing_rod.png") no-repeat center;
+	background-size: contain;
+	transform-origin: bottom left;
+	transform: rotate(-35deg);
+	z-index: 5;
+	animation: rodSway 3s ease-in-out infinite;
+	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.author-img::after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Fishing line from rod */
+#colorlib-aside::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: transparent;
+	pointer-events: none;
+	z-index: 999;
+}
+
+.fishing-line {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 998;
+}
+
+.fishing-line svg {
+	width: 100%;
+	height: 100%;
+}
+
+.fishing-line path {
+	stroke: rgba(100, 100, 100, 0.4);
+	stroke-width: 1.5;
+	fill: none;
+	stroke-dasharray: 5, 3;
+	filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+/* Fishing hook cursor */
+.fishing-hook {
+	position: fixed;
+	width: 24px;
+	height: 24px;
+	pointer-events: none;
+	z-index: 1000;
+	transform: translate(-12px, -12px);
+	transition: transform 0.1s ease;
+}
+
+.fishing-hook svg {
+	width: 100%;
+	height: 100%;
+	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes rodSway {
+	0%,
+	100% {
+		transform: rotate(-35deg);
+	}
+	50% {
+		transform: rotate(-38deg);
+	}
+}
+
+/* Override accordion yellow background */
+.colorlib-projects .accordion {
+	background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%) !important;
+	border: 2px solid rgba(100, 181, 246, 0.3);
+	box-shadow: 0 4px 15px rgba(33, 150, 243, 0.1);
+}
+
+.colorlib-projects .accordion .link {
+	background: transparent;
+	border-bottom: 1px solid rgba(100, 181, 246, 0.3) !important;
+	color: #000000 !important;
+	font-weight: 600;
+	font-size: 20px !important;
+}
+
+.colorlib-projects .accordion li.open .link {
+	color: #0d47a1 !important;
+}
+
+.colorlib-projects .submenu {
+	background: rgba(227, 242, 253, 0.5) !important;
+}
+
+/* Hide default cursor in publications section */
+.colorlib-projects {
+	cursor: none;
+}
+
+/* Fish container styles */
+.fish-container {
+	position: relative;
+	perspective: 1000px;
+}
+
+/* Individual fish (publication) styles */
+.fish-item {
+	position: relative;
+	transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transform-style: preserve-3d;
+	margin: 25px 0;
+	padding: 25px;
+	border-radius: 15px;
+	background: linear-gradient(
+		135deg,
+		rgba(44, 152, 240, 0.08) 0%,
+		rgba(44, 152, 240, 0.03) 100%
+	);
+	border: 2px solid transparent;
+	animation: swim 3s ease-in-out infinite;
+}
+
+/* Different fish types for different categories */
+.fish-item.ai-fish {
+	background: linear-gradient(
+		135deg,
+		rgba(255, 99, 132, 0.12) 0%,
+		rgba(255, 159, 64, 0.08) 100%
+	);
+	border-color: rgba(255, 99, 132, 0.35);
+	animation-delay: 0s;
+}
+
+.fish-item.chemistry-fish {
+	background: linear-gradient(
+		135deg,
+		rgba(54, 162, 235, 0.12) 0%,
+		rgba(75, 192, 192, 0.08) 100%
+	);
+	border-color: rgba(54, 162, 235, 0.35);
+	animation-delay: 0.5s;
+}
+
+.fish-item.other-fish {
+	background: linear-gradient(
+		135deg,
+		rgba(102, 187, 106, 0.12) 0%,
+		rgba(38, 198, 218, 0.08) 100%
+	) !important;
+	border-color: rgba(102, 187, 106, 0.35);
+	animation-delay: 1s;
+}
+
+/* Swimming animation */
+@keyframes swim {
+	0%,
+	100% {
+		transform: translateX(0) translateY(0) rotateY(0deg);
+	}
+	25% {
+		transform: translateX(10px) translateY(-5px) rotateY(2deg);
+	}
+	50% {
+		transform: translateX(0) translateY(-10px) rotateY(0deg);
+	}
+	75% {
+		transform: translateX(-10px) translateY(-5px) rotateY(-2deg);
+	}
+}
+
+/* Hover state - fish gets excited */
+.fish-item:hover {
+	transform: scale(1.05) translateY(-10px);
+	box-shadow: 0 15px 40px rgba(44, 152, 240, 0.3);
+	animation-play-state: paused;
+}
+
+.fish-item.ai-fish:hover {
+	box-shadow: 0 15px 40px rgba(255, 99, 132, 0.45);
+	border-color: rgba(255, 99, 132, 0.7);
+	background: linear-gradient(
+		135deg,
+		rgba(255, 99, 132, 0.18) 0%,
+		rgba(255, 159, 64, 0.12) 100%
+	);
+}
+
+.fish-item.chemistry-fish:hover {
+	box-shadow: 0 15px 40px rgba(54, 162, 235, 0.45);
+	border-color: rgba(54, 162, 235, 0.7);
+	background: linear-gradient(
+		135deg,
+		rgba(54, 162, 235, 0.18) 0%,
+		rgba(75, 192, 192, 0.12) 100%
+	);
+}
+
+.fish-item.other-fish:hover {
+	box-shadow: 0 15px 40px rgba(102, 187, 106, 0.45);
+	border-color: rgba(102, 187, 106, 0.7);
+	background: linear-gradient(
+		135deg,
+		rgba(102, 187, 106, 0.18) 0%,
+		rgba(38, 198, 218, 0.12) 100%
+	);
+}
+
+/* Fish emoji/icon */
+.fish-icon {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	font-size: 35px;
+	opacity: 0.5;
+	transition: all 0.3s ease;
+	animation: fishFloat 2s ease-in-out infinite;
+	pointer-events: none;
+}
+
+@keyframes fishFloat {
+	0%,
+	100% {
+		transform: translateY(0) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-8px) rotate(5deg);
+	}
+}
+
+.fish-item:hover .fish-icon {
+	opacity: 1;
+	transform: scale(1.2) rotate(10deg);
+	animation-play-state: paused;
+}
+
+/* Caught fish animation */
+@keyframes catchFish {
+	0% {
+		transform: scale(1) translateY(0) rotateZ(0deg);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.2) translateY(-30px) rotateZ(10deg);
+		opacity: 0.8;
+	}
+	100% {
+		transform: scale(0.8) translateY(-100px) rotateZ(20deg);
+		opacity: 0;
+	}
+}
+
+.fish-caught {
+	animation: catchFish 0.8s ease-out forwards !important;
+	pointer-events: none;
+}
+
+/* Ripple effect when catching fish */
+@keyframes ripple {
+	0% {
+		transform: scale(0.8);
+		opacity: 0.8;
+	}
+	100% {
+		transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+.ripple-effect {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	margin: -50px 0 0 -50px;
+	border-radius: 50%;
+	border: 3px solid rgba(44, 152, 240, 0.6);
+	animation: ripple 0.6s ease-out;
+	pointer-events: none;
+}
+
+/* Fish category headers */
+.fish-category-header {
+	position: relative;
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+
+.fish-category-header::before {
+	content: "";
+	display: none;
+}
+
+@keyframes hookSwing {
+	0%,
+	100% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+}
+
+/* Catch counter */
+.catch-counter {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+	color: white;
+	padding: 15px 25px;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: 0 10px 30px rgba(79, 172, 254, 0.5);
+	z-index: 1000;
+	transition: all 0.3s ease;
+	display: none;
+}
+
+.catch-counter.show {
+	display: block;
+	animation: bounceIn 0.5s ease;
+}
+
+@keyframes bounceIn {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.catch-counter:hover {
+	transform: scale(1.1);
+}
+
+/* Water background effect for publications section */
+.colorlib-projects .colorlib-narrow-content {
+	position: relative;
+	background: transparent;
+	border-radius: 15px;
+	padding: 30px;
+	overflow: hidden;
+}
+
+/* Bubbles animation */
+.bubble {
+	position: absolute;
+	bottom: -100px;
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 0.4) 0%,
+		rgba(255, 255, 255, 0.1) 100%
+	);
+	border-radius: 50%;
+	opacity: 0.3;
+	animation: rise 6s infinite ease-in;
+	pointer-events: none;
+}
+
+@keyframes rise {
+	0% {
+		bottom: -100px;
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		bottom: 100%;
+		opacity: 0;
+	}
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+	.fish-icon {
+		font-size: 30px;
+		right: 10px;
+		top: 10px;
+	}
+
+	.catch-counter {
+		top: 10px;
+		right: 10px;
+		padding: 10px 20px;
+		font-size: 16px;
+	}
+
+	.fish-item {
+		padding: 15px;
+	}
+}
+
+/* Print styles - disable fishing theme when printing */
+@media print {
+	.fish-icon,
+	.catch-counter,
+	.bubble,
+	.ripple-effect {
+		display: none !important;
+	}
+
+	.fish-item {
+		animation: none !important;
+		transform: none !important;
+		background: white !important;
+		border: 1px solid #ddd !important;
+	}
+
+	.colorlib-projects {
+		cursor: default !important;
+	}
+}
