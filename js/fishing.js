@@ -176,10 +176,10 @@ class FishingGame {
 
 	showCatchMessage(fishType) {
 		const messages = [
-			`Nice catch! You got a ${fishType.name}! 🎉`,
-			`Wow! A ${fishType.name} is hooked! 🎣`,
+			`Nice catch! You got one ${fishType.name}! 🎉`,
+			`Wow! One ${fishType.name} is hooked! 🎣`,
 			`Great job! ${fishType.name} caught! ✨`,
-			`Amazing! You caught a ${fishType.name}! 🌟`,
+			`Amazing! You caught one ${fishType.name}! 🌟`,
 		];
 
 		const message = messages[Math.floor(Math.random() * messages.length)];
